@@ -46,18 +46,18 @@ public class Pizza {
         // your code goes here
         if(isVeg){
             this.price=300;
-            this.bill= "Base Price Of The Pizza: 300\n";
+            this.bill= "Base Price Of The Pizza: "+price+"\n";
         }
 
         else {
             this.price = 400;
-            this.bill= "Base Price Of The Pizza: 400\n";
+            this.bill= "Base Price Of The Pizza: "+price+"\n";
         }
     }
 
-    public void setPrice(int price) {
-        this.price = price;
-    }
+//    public void setPrice(int price) {
+//        this.price = price;
+//    }
 
     public int getPrice(){
         return this.price;
@@ -101,7 +101,7 @@ public class Pizza {
         // your code goes here
         if(isBill)
             return this.bill;
-        this.bill+="Total Price:"+this.price+"\n";
+        this.bill+="Total Price: "+this.price+"\n";
         return this.bill;
     }
 }
