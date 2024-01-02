@@ -102,6 +102,7 @@ public class Pizza {
         if(isBill)
             return this.bill;
         this.bill+="Total Price: "+this.price+"\n";
+        isBill=true;
         return this.bill;
     }
 }
