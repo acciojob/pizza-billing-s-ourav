@@ -6,6 +6,12 @@ public class Pizza {
     private Boolean isVeg;
     private String bill;
 
+
+    private final int cheese=80;
+    private final int vegTopping=70;
+    private final int nonVegTopping=120;
+    private final int bag=20;
+
     private  Boolean isCheese=false;
     private  Boolean isTop=false;
     private  Boolean isBag=false;
@@ -36,8 +42,8 @@ public class Pizza {
         // your code goes here
         if(!isCheese){
             this.isCheese=true;
-            this.price+=80;
-            this.bill +="\nExtra Cheese Added: 80";
+            this.price+=cheese;
+            this.bill +="\nExtra Cheese Added: "+cheese;
         }
 
     }
@@ -48,12 +54,12 @@ public class Pizza {
             return;
         isTop=true;
         if(isVeg) {
-            this.price+=70;
-            this.bill+="\nExtra Toppings Added: 70";
+            this.price+= vegTopping;
+            this.bill+="\nExtra Toppings Added: "+vegTopping;
         }
         else {
-            this.price += 120;
-            this.bill+="\nExtra Toppings Added: 120";
+            this.price += nonVegTopping;
+            this.bill+="\nExtra Toppings Added: "+nonVegTopping;
         }
     }
 
@@ -62,8 +68,8 @@ public class Pizza {
         if(isBag)
             return;
         isBag=true;
-        this.price+=20;
-        this.bill+="\nPaperbag Added: 20";
+        this.price+=bag;
+        this.bill+="\nPaperbag Added: "+bag;
     }
 
     public String getBill(){
