@@ -16,6 +16,31 @@ public class Pizza {
     private  Boolean isTop=false;
     private  Boolean isBag=false;
     private Boolean isBill=false;
+
+    public Boolean getVeg() {
+        return isVeg;
+    }
+
+    public int getCheese() {
+        return cheese;
+    }
+
+    public Boolean getTop() {
+        return isTop;
+    }
+
+    public int getVegTopping() {
+        return vegTopping;
+    }
+
+    public int getNonVegTopping() {
+        return nonVegTopping;
+    }
+
+    public int getBag() {
+        return bag;
+    }
+
     public Pizza(Boolean isVeg){
         this.isVeg = isVeg;
         // your code goes here
